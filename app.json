@@ -1,0 +1,30 @@
+{
+  "name": "꓅꒑ꋊ ℳɄƧꂑᏣ β๏꓅",
+  "description": "Advance features music bot. Powered by pytgcall.",
+  "keywords": ["music", "voicechat", "telegram"],
+  "repository": "https://github.com/Parth651-45/uzox",
+  "stack": "container",
+  "env": {
+    "SESSION_NAME": {
+      "description": "Pyrogram session string",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "A bot token from @BotFather",
+      "required": true
+    },
+    "BOT_NAME": {
+      "description": "Your MusicPlayer Bot Name.",
+      "required": false,
+      "value": ""
+    },
+    "API_ID": {
+      "description": "App ID from my.telegram.org/apps",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "App hash from my.telegram.org/apps",
+      "required": true
+    }
+  }
+}
