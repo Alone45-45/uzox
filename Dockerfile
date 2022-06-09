@@ -8,4 +8,4 @@ RUN npm i -g npm
 COPY . /uzox/
 WORKDIR /uzox/
 RUN pip3 install -U -r requirements.txt
-CMD bash start
+CMD python3 -m uzox
