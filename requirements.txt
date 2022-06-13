@@ -1,8 +1,8 @@
-tgcrypto
+tgcrypto==1.2.3
 asyncio
 ffmpeg-python
 py-tgcalls==0.9.1
-pyrogram
+pyrogram==2.0.27
 youtube-search-python
 lyricsgenius
 youtube-search
