@@ -2,7 +2,7 @@ import asyncio
 from pyrogram import Client, filters
 from pyrogram.types import Dialog, Chat, Message
 from pyrogram.errors import UserAlreadyParticipant
-from callsmusic.callsmusic import client as aditya
+from callsmusic.callsmusic import client as parth
 from config import SUDO_USERS
 
 @Client.on_message(filters.command(["gcast", "broadcast"]))
@@ -12,18 +12,18 @@ async def broadcast(_, message: Message):
     if message.from_user.id not in SUDO_USERS:
         return
     else:
-        wtf = await message.reply("**`🥀 𝐒𝐭𝐚𝐫𝐭𝐢𝐧𝐠 𝐁𝐫𝐨𝐚𝐝𝐜𝐚𝐬𝐭 ...`**")
+        wtf = await message.reply("** 😘ꜱᴛᴀʀᴛ ʙʀᴏᴀᴅᴄᴀꜱᴛ ʙᴀʙʏ...**")
         if not message.reply_to_message:
-            await wtf.edit("**🎸 𝑷𝒍𝒆𝒂𝒔𝒆 𝑹𝒆𝒑𝒍𝒚 𝑻𝒐 𝒂 𝑴𝒆𝒔𝒔𝒂𝒈𝒆 ...**")
+            await wtf.edit("**😚 ʀᴇᴘʟʏ ᴋᴀʀᴏ ᴊᴀᴀɴ ...**")
             return
         lmao = message.reply_to_message.text
-        async for dialog in aditya.iter_dialogs():
+        async for dialog in parth.iter_dialogs():
             try:
-                await aditya.send_message(dialog.chat.id, lmao)
+                await parth.send_message(dialog.chat.id, lmao)
                 sent = sent+1
-                await wtf.edit(f"**🥀 𝐁𝐫𝐨𝐚𝐝𝐜𝐚𝐬𝐭𝐢𝐧𝐠 ...** \n\n**✔️ 𝐒𝐞𝐧𝐭 𝐓𝐨:** `{sent}` **𝐂𝐡𝐚𝐭𝐬** \n**❌ 𝐅𝐚𝐢𝐥𝐞𝐝 𝐈𝐧:** `{failed}` **𝐂𝐡𝐚𝐭𝐬**")
+                await wtf.edit(f"**😘ʙʀᴏᴀᴅᴄᴀꜱᴛɪɴɢ ʙᴀʙʏ ...** \n\n**✔️ ꜱᴇɴᴛ ᴛᴏ:** `{sent}` **ᴄʜᴀᴛꜱ** \n**❌ ꜰᴀɪʟᴇᴅ ɪɴ:** `{failed}` **ᴄʜᴀᴛꜱ**")
                 await asyncio.sleep(3)
             except:
                 failed=failed+1
         await wtf.delete()
-        await message.reply_text(f"**🥀 𝐆𝐜𝐚𝐬𝐭 𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 ...**\n\n**✔️ 𝐒𝐞𝐧𝐭 𝐓𝐨:** `{sent}` **𝐂𝐡𝐚𝐭𝐬**\n**❌ 𝐅𝐚𝐢𝐥𝐞𝐝 𝐈𝐧:** `{failed}` **𝐂𝐡𝐚𝐭𝐬**")
+        await message.reply_text(f"**😚ʙʀᴏᴀᴅᴄᴀꜱᴛ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ᴊᴀᴀɴᴜ ...**\n\n**✔️ ꜱᴇɴᴛ ᴛᴏ:** `{sent}` **ᴄʜᴀᴛꜱ**\n**❌ ꜰᴀɪʟᴇᴅ ɪɴ:** `{failed}` **ᴄʜᴀᴛꜱ**")
