@@ -2,4 +2,20 @@ tgcrypto==1.2.3
 asyncio
 py-tgcalls==0.9.1
 pyrogram==2.0.27
+aiohttp
+aiofiles
+asyncio
+dnspython
+ffmpeg-python
+future
+git+https://github.com/kaalmous/downloader@kaal
+motor
+pillow
+psutil
+python-dotenv
+requests
+wget
+youtube-search
+youtube-search-python
+
 
