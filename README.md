@@ -1,3 +1,3 @@
 # UZOX
 
-<p align="center"><a href="https://zaid.vercel.app/"> <https://img.shields.io/badge/-%F0%9D%98%BF%F0%9D%99%80%F0%9D%99%8B%F0%9D%99%87%F0%9D%99%8A%F0%9D%99%94%20%F0%9D%99%8F%F0%9D%99%8A%20%F0%9D%99%83%F0%9D%99%80%F0%9D%99%8D%F0%9D%99%8A%F0%9D%99%86%F0%9D%99%90-blue?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+<p align="center"><a href="https://github.com/Alone45-45/uzox"> <https://img.shields.io/badge/-%F0%9D%98%BF%F0%9D%99%80%F0%9D%99%8B%F0%9D%99%87%F0%9D%99%8A%F0%9D%99%94%20%F0%9D%99%8F%F0%9D%99%8A%20%F0%9D%99%83%F0%9D%99%80%F0%9D%99%8D%F0%9D%99%8A%F0%9D%99%86%F0%9D%99%90-blue?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
