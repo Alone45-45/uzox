@@ -3,10 +3,11 @@ from pytgcalls import PyTgCalls
 from pytgcalls.types import Update
 from pytgcalls.types.input_stream import InputStream
 from pytgcalls.types.input_stream import InputAudioStream
-from config import STRING_SESSION,API_ID,API_HASH
+from config import API_HASH, API_ID, STRING_SESSION
+
 from . import queues
 
-client = Client(config.STRING_SESSION, config.API_ID, config.API_HASH)
+client = Client(STRING_SESSION, API_ID, API_HASH)
 pytgcalls = PyTgCalls(client)
 
 
@@ -26,5 +27,6 @@ async def on_stream_end(client: PyTgCalls, update: Update) -> None:
                 ),
             ),
         )
-      
+
+
 run = pytgcalls.start
