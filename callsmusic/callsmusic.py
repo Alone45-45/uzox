@@ -3,7 +3,7 @@ from pytgcalls import PyTgCalls
 from pytgcalls.types import Update
 from pytgcalls.types.input_stream import InputStream
 from pytgcalls.types.input_stream import InputAudioStream
-from config
+from config import STRING_SESSION,API_ID,API_HASH
 from . import queues
 
 client = Client(config.STRING_SESSION, config.API_ID, config.API_HASH)
