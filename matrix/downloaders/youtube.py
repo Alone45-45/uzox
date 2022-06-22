@@ -2,7 +2,7 @@ from os import path
 
 from yt_dlp import YoutubeDL
 
-from config import DURATION_LIMIT
+from matrix.config import DURATION_LIMIT
 from maintain.errors import DurationLimitError
 
 ydl_opts = {
