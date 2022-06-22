@@ -12,17 +12,17 @@ from pyrogram import Client, filters
 from pyrogram.types import Message, Voice, InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram.errors import UserAlreadyParticipant
 from matrix.cache.admins import set
-from callsmusic import callsmusic, queues
-from callsmusic.callmusic import client as USER
+from matrix.callsmusic import callsmusic, queues
+from matrix.callsmusic.callmusic import client as USER
 from maintain.admins import get_administrators
 from youtube_search import YoutubeSearch
-from modules import converter
+from matrix import converter
 from matrix.downloaders import youtube
-from config import ASSISTANT_USERNAME, DURATION_LIMIT, que, OWNER_USERNAME, SUDO_USERS, SUPPORT_GROUP, UPDATES_CHANNEL, PROFILE_CHANNEL
+from matrix.config import ASSISTANT_USERNAME, DURATION_LIMIT, que, OWNER_USERNAME, SUDO_USERS, SUPPORT_GROUP, UPDATES_CHANNEL, PROFILE_CHANNEL
 from matrix.cache.admins import admins as a
 from maintain.filters import command, other_filters
 from maintain.command import commandpro
-from matrix.decorators import errors, authorized_users_only
+from maintain.decorators import errors, authorized_users_only
 from maintain.errors import DurationLimitError
 from maintain.gets import get_url, get_file_name
 from PIL import Image, ImageFont, ImageDraw
