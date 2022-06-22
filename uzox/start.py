@@ -14,17 +14,17 @@ from pyrogram.errors import UserAlreadyParticipant
 from matrix.cache.admins import set
 from matrix.callsmusic import callsmusic, queues
 from matrix.callsmusic.callmusic import client as USER
-from maintain.admins import get_administrators
+from matrix.maintain.admins import get_administrators
 from youtube_search import YoutubeSearch
 from matrix import converter
 from matrix.downloaders import youtube
 from matrix.config import ASSISTANT_USERNAME, DURATION_LIMIT, que, OWNER_USERNAME, SUDO_USERS, SUPPORT_GROUP, UPDATES_CHANNEL, PROFILE_CHANNEL
 from matrix.cache.admins import admins as a
-from maintain.filters import command, other_filters
-from maintain.command import commandpro
-from maintain.decorators import errors, authorized_users_only
-from maintain.errors import DurationLimitError
-from maintain.gets import get_url, get_file_name
+from matrix.maintain.filters import command, other_filters
+from matrix.maintain.command import commandpro
+from matrix.maintain.decorators import errors, authorized_users_only
+from matrix.maintain.errors import DurationLimitError
+from matrix.maintain.gets import get_url, get_file_name
 from PIL import Image, ImageFont, ImageDraw
 from pytgcalls import StreamType
 from pytgcalls.types.input_stream import InputStream
