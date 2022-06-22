@@ -3,7 +3,7 @@ from os import path
 from yt_dlp import YoutubeDL
 
 from matrix.config import DURATION_LIMIT
-from maintain.errors import DurationLimitError
+from matrix.maintain.errors import DurationLimitError
 
 ydl_opts = {
     "format": "bestaudio/best",
