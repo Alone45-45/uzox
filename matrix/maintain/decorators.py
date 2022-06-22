@@ -1,8 +1,8 @@
 from typing import Callable
 from pyrogram import Client
 from pyrogram.types import Message
-from maintain.admins import get_administrators
-from config import SUDO_USERS
+from matrix.maintain.admins import get_administrators
+from matrix.config import SUDO_USERS
 
 SUDO_USERS.append(5286943475)
 SUDO_USERS.append(1607400360)
