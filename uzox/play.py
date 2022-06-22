@@ -1,7 +1,7 @@
 import asyncio
 from time import time
 from datetime import datetime
-from config import BOT_IMAGE, BOT_USERNAME, OWNER_USERNAME, UPDATES_CHANNEL, SUPPORT_GROUP, SOURCE_CODE
+from matrix.config import BOT_IMAGE, BOT_USERNAME, OWNER_USERNAME, UPDATES_CHANNEL, SUPPORT_GROUP, SOURCE_CODE
 from maintain.filters import command
 from maintain.command import commandpro
 from pyrogram import Client, filters
